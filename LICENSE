@@ -1,0 +1,42 @@
+MIT License
+
+Copyright (c) 2026 Voice Cloning Project
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+IMPORTANT LEGAL NOTICES:
+
+1. DATASET LICENSES
+   - Mozilla Common Voice: CC-0 / CC-BY (verify specific version)
+   - Arabic Speech Corpus: Academic use only
+   - MLS French: CC-BY 4.0
+   - Always verify and comply with individual dataset licenses
+
+2. VOICE CLONING ETHICS
+   - Obtain explicit consent before cloning any person's voice
+   - Do not use for impersonation, fraud, or malicious purposes
+   - Respect privacy and intellectual property rights
+   - Comply with local laws regarding voice synthesis and deepfakes
+
+3. COMMERCIAL USE
+   - Verify dataset licenses permit commercial use
+   - Some datasets are restricted to research/academic use only
+   - Consult legal counsel for commercial applications

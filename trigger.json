@@ -1,0 +1,13 @@
+{
+    "job_id": "starconnect_v1",
+    "status": "pending",
+    "config": {
+        "languages": [
+            "fr"
+        ],
+        "dataset": "/content/drive/MyDrive/f5_tts_datasets/starconnect_f5tts",
+        "epochs": 200,
+        "batch_size": 2,
+        "gpu_type": "T4"
+    }
+}

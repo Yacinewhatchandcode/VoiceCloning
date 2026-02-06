@@ -1,0 +1,9 @@
+{
+  "text": "Manger q'un steak par jour.",
+  "start": 0.0,
+  "end": 1.0,
+  "completeness": 1.0,
+  "num_words": 7,
+  "file": "data/output/splits/segment_017.wav",
+  "duration": 0.99
+}

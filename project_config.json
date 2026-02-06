@@ -1,0 +1,67 @@
+{
+    "project": {
+        "name": "Voice Cloning Pipeline",
+        "version": "1.0.0",
+        "description": "Pipeline complet pour voice cloning multilingue (FR/AR)",
+        "languages": [
+            "fr",
+            "ar"
+        ],
+        "created": "2026-01-17"
+    },
+    "datasets": {
+        "commonvoice_fr": {
+            "path": "datasets/raw/commonvoice_fr",
+            "language": "fr",
+            "version": "17.0",
+            "source": "mozilla-foundation/common_voice_17_0",
+            "status": "not_downloaded"
+        },
+        "commonvoice_ar": {
+            "path": "datasets/raw/commonvoice_ar",
+            "language": "ar",
+            "version": "17.0",
+            "source": "mozilla-foundation/common_voice_17_0",
+            "status": "not_downloaded"
+        },
+        "arabic_corpus": {
+            "path": "datasets/raw/arabic_speech_corpus",
+            "language": "ar",
+            "source": "tunis-ai/arabic_speech_corpus",
+            "status": "not_downloaded"
+        }
+    },
+    "models": {
+        "xtts_multilingual": {
+            "type": "xtts_v2",
+            "config": "configs/xtts_multilingual.yaml",
+            "checkpoint": "models/finetuned/xtts_multilingual/best_model.pth",
+            "languages": [
+                "fr",
+                "ar"
+            ],
+            "status": "not_trained"
+        }
+    },
+    "preprocessing": {
+        "sample_rate": 22050,
+        "trim_silence": true,
+        "normalize": true,
+        "min_duration": 1.0,
+        "max_duration": 15.0
+    },
+    "training": {
+        "batch_size": 16,
+        "learning_rate": 1e-5,
+        "epochs": 200,
+        "device": "auto"
+    },
+    "paths": {
+        "datasets_raw": "datasets/raw",
+        "datasets_processed": "datasets/processed",
+        "datasets_metadata": "datasets/metadata",
+        "models": "models",
+        "logs": "logs",
+        "output": "output"
+    }
+}

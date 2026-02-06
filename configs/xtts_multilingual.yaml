@@ -1,0 +1,108 @@
+# Configuration XTTS v2 pour voice cloning multilingue (FR + AR)
+
+model:
+  type: "xtts_v2"
+  languages: ["fr", "ar"]
+  
+  # Architecture
+  gpt_layers: 30
+  gpt_heads: 16
+  gpt_hidden_size: 1024
+  
+  # Audio settings
+  sample_rate: 22050
+  hop_length: 256
+  win_length: 1024
+  n_fft: 1024
+  mel_channels: 80
+  
+  # Speaker encoder
+  speaker_encoder_dim: 512
+  use_speaker_embedding: true
+  
+  # Vocoder
+  vocoder: "bigvgan"  # ou "hifigan"
+  vocoder_checkpoint: null  # Auto-download si null
+
+training:
+  # Optimization
+  batch_size: 16
+  gradient_accumulation_steps: 4
+  learning_rate: 1.0e-5
+  weight_decay: 0.01
+  
+  # Scheduler
+  lr_scheduler: "cosine_annealing"
+  warmup_steps: 1000
+  
+  # Training duration
+  epochs: 200
+  max_steps: null  # null = use epochs
+  
+  # Checkpointing
+  save_every_n_steps: 5000
+  eval_every_n_steps: 2500
+  keep_n_checkpoints: 5
+  
+  # Mixed precision
+  use_fp16: true
+  use_gradient_checkpointing: true
+  
+  # Distributed training
+  num_gpus: 1
+  distributed_backend: "nccl"
+
+data:
+  # Paths
+  train_csv: "datasets/metadata/train.csv"
+  val_csv: "datasets/metadata/val.csv"
+  test_csv: "datasets/metadata/test.csv"
+  
+  # Audio constraints
+  min_audio_length: 1.0   # seconds
+  max_audio_length: 15.0  # seconds
+  
+  # Text constraints
+  min_text_length: 10     # characters
+  max_text_length: 500
+  
+  # Preprocessing
+  trim_silence: true
+  normalize_audio: true
+  add_noise: false        # Data augmentation
+  
+  # Dataloader
+  num_workers: 8
+  prefetch_factor: 2
+  pin_memory: true
+  
+  # Language tokens
+  use_language_tokens: true
+  language_token_format: "<{lang}>"  # ex: <fr>, <ar>
+
+evaluation:
+  # Metrics
+  compute_mos: false      # Coûteux, nécessite modèle externe
+  compute_wer: true
+  compute_speaker_similarity: true
+  
+  # Test samples
+  num_test_samples: 10
+  save_audio_samples: true
+
+paths:
+  output_dir: "models/finetuned/xtts_multilingual"
+  log_dir: "logs/xtts_multilingual"
+  tensorboard_dir: "tensorboard/xtts_multilingual"
+
+# Logging
+logging:
+  level: "INFO"
+  log_every_n_steps: 100
+  use_tensorboard: true
+  use_wandb: false  # Mettre true si compte W&B configuré
+  wandb_project: "voice-cloning-fr-ar"
+
+# Reproducibility
+seed: 42
+deterministic: true

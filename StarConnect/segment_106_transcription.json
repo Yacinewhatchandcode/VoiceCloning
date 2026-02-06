@@ -1,0 +1,9 @@
+{
+  "text": "Par exemple, moi, je rentre dans un restaurant très connu, ça s'appelle.",
+  "start": 0.0,
+  "end": 3.0,
+  "completeness": 1.0,
+  "num_words": 12,
+  "file": "data/output/splits/segment_106.wav",
+  "duration": 2.926
+}

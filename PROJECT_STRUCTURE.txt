@@ -1,0 +1,86 @@
+🎙️ VOICE CLONING PIPELINE — STRUCTURE COMPLÈTE
+================================================
+
+VoiceCloning/
+│
+├── 📄 START_HERE.md              ⭐ COMMENCEZ ICI !
+├── 📄 README.md                  📚 Documentation principale
+├── 📄 QUICKSTART.md              ⚡ Guide de démarrage rapide
+├── 📄 EXAMPLES.md                💡 50+ exemples pratiques
+├── 📄 RESOURCES.md               🔗 Datasets et ressources
+├── 📄 DELIVERY_SUMMARY.md        📦 Résumé de livraison
+│
+├── 🔧 setup.sh                   🚀 Script d'installation automatisé
+├── 📄 requirements.txt           📦 Dépendances Python
+├── 📄 project_config.json        ⚙️  Configuration du projet
+├── 📄 LICENSE                    ⚖️  Licence MIT + notices légales
+├── 📄 .gitignore                 🚫 Exclusions Git
+│
+├── 🎓 train.py                   🏋️  Script d'entraînement principal
+├── 📊 evaluate.py                📈 Script d'évaluation
+│
+├── 📁 configs/
+│   └── xtts_multilingual.yaml   ⚙️  Config XTTS v2 (FR + AR)
+│
+├── 📁 scripts/
+│   ├── check_setup.py           ✅ Vérification environnement
+│   │
+│   ├── 📁 download/
+│   │   ├── download_commonvoice.py      📥 Common Voice (FR/AR)
+│   │   ├── download_arabic_corpus.py    📥 Arabic Speech Corpus
+│   │   └── download_all.sh              📥 Téléchargement batch
+│   │
+│   ├── 📁 preprocess/
+│   │   └── process_audio.py     🔧 Pipeline de prétraitement
+│   │
+│   └── 📁 metadata/
+│       └── generate_metadata.py 📋 Génération metadata
+│
+├── 📁 demo/
+│   └── clone_voice.py           🎙️  Interface de clonage
+│
+├── 📁 notebooks/
+│   └── demo.md                  📓 Notebook Jupyter interactif
+│
+├── 📁 datasets/                 💾 Données (créés automatiquement)
+│   ├── raw/                     📦 Datasets téléchargés
+│   ├── processed/               🔧 Audio prétraité
+│   └── metadata/                📋 CSV de transcriptions
+│
+├── 📁 models/                   🤖 Modèles
+│   ├── pretrained/              📥 Checkpoints pré-entraînés
+│   └── finetuned/               🎯 Modèles fine-tunés
+│
+├── 📁 logs/                     📝 Logs d'entraînement
+├── 📁 tensorboard/              �� Visualisations TensorBoard
+├── 📁 output/                   🎵 Audios générés
+├── 📁 samples/                  🎤 Échantillons de référence
+└── 📁 tests/                    🧪 Tests unitaires
+
+================================================
+FICHIERS TOTAUX : 20+
+SCRIPTS PYTHON : 8
+DOCUMENTATION : 7 fichiers
+================================================
+
+🎯 DÉMARRAGE RAPIDE :
+1. ./setup.sh
+2. source venv/bin/activate
+3. python scripts/check_setup.py
+4. Lire START_HERE.md
+
+📚 DOCUMENTATION PRIORITAIRE :
+⭐ START_HERE.md      → Démarrage en 3 commandes
+📖 QUICKSTART.md      → Guide détaillé
+💡 EXAMPLES.md        → Exemples pratiques
+🔗 RESOURCES.md       → Datasets et outils
+
+🚀 WORKFLOW TYPIQUE :
+1. Télécharger dataset  → scripts/download/
+2. Prétraiter audio     → scripts/preprocess/
+3. Générer metadata     → scripts/metadata/
+4. Entraîner modèle     → train.py
+5. Tester clonage       → demo/clone_voice.py
+6. Évaluer qualité      → evaluate.py
+
+================================================

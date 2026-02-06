@@ -1,0 +1,9 @@
+{
+  "text": "Ceci est en dit.",
+  "start": 0.0,
+  "end": 1.0,
+  "completeness": 0.8,
+  "num_words": 4,
+  "file": "data/output/splits/segment_300.wav",
+  "duration": 1.276
+}

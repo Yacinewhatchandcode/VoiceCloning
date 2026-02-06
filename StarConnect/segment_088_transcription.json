@@ -1,0 +1,9 @@
+{
+  "text": "C'est ce qui coûte.",
+  "start": 0.0,
+  "end": 1.0,
+  "completeness": 0.8,
+  "num_words": 4,
+  "file": "data/output/splits/segment_088.wav",
+  "duration": 0.668
+}
