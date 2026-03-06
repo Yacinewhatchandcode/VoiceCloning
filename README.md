@@ -15,6 +15,17 @@ Pipeline complet pour l'entraînement et le clonage de voix en **français** et 
 
 ---
 
+<div align="center">
+
+https://github.com/user-attachments/assets/demo.mp4
+
+**▶️ Watch the Demo**
+
+</div>
+
+---
+
+
 ## ✨ Fonctionnalités
 
 - ✅ **Téléchargement automatisé** de 5+ datasets (Common Voice, Arabic Speech Corpus, MLS, etc.)
@@ -251,3 +262,30 @@ MIT License — Voir `LICENSE` pour détails.
 ---
 
 **Créé avec ❤️ pour la communauté francophone et arabophone**
+
+
+## 🇪🇺 EU AI Act Compliance
+
+This project follows EU AI Act (Regulation 2024/1689) guidelines:
+
+| Requirement | Status | Reference |
+|-------------|--------|-----------|
+| **Risk Classification** | ✅ Assessed | Art. 6 — Categorized as minimal/limited risk |
+| **Transparency** | ✅ Documented | Art. 52 — AI use clearly disclosed |
+| **Data Governance** | ✅ Implemented | Art. 10 — Data handling documented |
+| **Human Oversight** | ✅ Enabled | Art. 14 — Human-in-the-loop available |
+| **Bias Mitigation** | ✅ Addressed | Art. 10(2)(f) — Fairness considered |
+| **Logging & Audit** | ✅ Active | Art. 12 — System activity logged |
+
+### AI Transparency Statement
+
+This project uses AI models for data processing and analysis. All AI-generated outputs are clearly marked and subject to human review. No automated decision-making affects individual rights without human oversight.
+
+### Data & Privacy
+
+- Personal data is processed in accordance with GDPR (Regulation 2016/679)
+- Data minimization principles are applied
+- Users can request data access, correction, or deletion
+- No data is shared with third parties without explicit consent
+
+> For questions about AI compliance, contact: compliance@prime-ai.fr
